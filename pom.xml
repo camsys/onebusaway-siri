@@ -156,7 +156,7 @@
       <dependency>
         <groupId>org.onebusaway</groupId>
         <artifactId>onebusaway-guice-jsr250</artifactId>
-        <version>1.0.3-st-SNAPSHOT</version>
+        <version>1.0.4-st-SNAPSHOT</version>
       </dependency>
 
       <dependency>
