@@ -6,7 +6,7 @@
     <version>1.1.8</version>
   </parent>
   <artifactId>onebusaway-siri</artifactId>
-  <version>1.0.7-SNAPSHOT</version>
+  <version>1.0.8-st-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <name>onebusaway-siri</name>
@@ -27,6 +27,14 @@
 
   <repositories>
     <repository>
+      <id>releases-camsys-repo</id>
+      <url>http://developer.onebusaway.org/archiva/repository/releases/</url> 
+    </repository>
+    <repository>
+      <id>snapshots-camsys-repo</id>
+      <url>http://developer.onebusaway.org/archiva/repository/snapshots/</url> 
+    </repository>
+    <repository>
       <id>public.onebusaway.org</id>
       <url>http://nexus.onebusaway.org/content/groups/public/</url>
     </repository>
@@ -44,6 +52,16 @@
   </issueManagement>
 
   <distributionManagement>
+    <repository>
+      <id>releases-camsys-repo</id>
+      <name>OneBusAway Camsys Release Repo</name>
+      <url>http://developer.onebusaway.org/archiva/repository/releases/</url> 
+    </repository>
+    <snapshotRepository>
+      <id>snapshots-camsys-repo</id>
+      <name>OneBusAway Camsys Snapshot Repo</name>
+      <url>http://developer.onebusaway.org/archiva/repository/snapshots/</url> 
+    </snapshotRepository>
     <site>
       <id>${site_id}</id>
       <url>${site_deployment_base}/onebusaway-siri/${project.version}</url>
@@ -138,18 +156,18 @@
       <dependency>
         <groupId>org.onebusaway</groupId>
         <artifactId>onebusaway-guice-jsr250</artifactId>
-        <version>1.0.2</version>
+        <version>1.0.3-st-SNAPSHOT</version>
       </dependency>
 
       <dependency>
         <groupId>org.slf4j</groupId>
         <artifactId>slf4j-api</artifactId>
-        <version>1.5.6</version>
+        <version>1.7.5</version>
       </dependency>
       <dependency>
         <groupId>org.slf4j</groupId>
         <artifactId>slf4j-log4j12</artifactId>
-        <version>1.5.6</version>
+        <version>1.7.5</version>
       </dependency>
 
       <dependency>
